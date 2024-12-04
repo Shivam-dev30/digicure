@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.digicure.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Digicure</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboard">Dashboard</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit">Search</button>
+                </form>
+                <a href="#" class="btn btn-warning ms-3" data-bs-toggle="modal" data-bs-target="#signInModal">Sign
+                    In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center text-center text-red">
+        <div class="container">
+            <h1 class="display-4">Congratulation! For First Step Towards Your Health</h1>
+            <p class="lead">Your health, our priority. Comprehensive care at your fingertips.</p>
+            <a href="#" class="btn btn-lg btn-light mt-4" data-bs-toggle="modal" data-bs-target="#signInModal">Get Started</a>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-calendar display-4 text-primary"></i>
+                            <h5 class="card-title mt-3">Appointments</h5>
+                            <p class="card-text">Shows upcoming and past appointments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-person display-4 text-primary"></i>
+                            <h5 class="card-title mt-3">Profile Management</h5>
+                            <p class="card-text">Allows users to update their personal information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-file-earmark-text display-4 text-primary"></i>
+                            <h5 class="card-title mt-3">Healthcare Record Form</h5>
+                            <p class="card-text">For creating or updating health records.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>We are a dedicated team of healthcare professionals committed to providing top-notch medical
+                        services to our community.</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Placeholder Image -->
+                    <img src="image/workplace-mental-health-01-1500x1000-4b79cced7e70487fbcfe3d370be35ad7.jpg"
+                        class="img-fluid" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Patients Say</h2>
+            <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <div class="testimonial-box">
+                            <p class="lead">"The care I received at the Healthcare Management System was outstanding.
+                                The staff was professional and caring."</p>
+                            <footer class="blockquote-footer">John Doe</footer>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <div class="testimonial-box">
+                            <p class="lead">"Thanks to their timely diagnosis and treatment, I'm now living a healthy
+                                life. Highly recommend!"</p>
+                            <footer class="blockquote-footer">Jane Smith</footer>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Contact Us</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Healthcare Management System</h5>
+                        <p>Providing comprehensive care for your well-being.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Home</a></li>
+                            <li><a href="#services" class="text-white">Services</a></li>
+                            <li><a href="#about" class="text-white">About Us</a></li>
+                            <li><a href="#contact" class="text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Information</h5>
+                        <p>Email: info@Digicure.com</p>
+                        <p>Phone: +123 456 7890</p>
+                        <p>Address: 123 Health St, Wellness City</p>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p>&copy; 2024 Digicure. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+        <!-- Sign In Modal -->
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Tabs for Patient and Admin -->
+                        <ul class="nav nav-tabs" id="signInTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="patient-tab" data-bs-toggle="tab"
+                                    data-bs-target="#patient" type="button" role="tab" aria-controls="patient"
+                                    aria-selected="true">Patient</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin"
+                                    type="button" role="tab" aria-controls="admin" aria-selected="false">Admin</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3" id="signInTabsContent">
+                            <!-- Patient Sign In Form -->
+                            <div class="tab-pane fade show active" id="patient" role="tabpanel"
+                                aria-labelledby="patient-tab">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="patientEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="patientEmail"
+                                            placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="patientPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="patientPassword"
+                                            placeholder="Enter your password" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                                </form>
+                            </div>
+                            <!-- Admin Sign In Form -->
+                            <div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="admin-tab">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="adminEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="adminEmail"
+                                            placeholder="Enter admin email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="adminPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="adminPassword"
+                                            placeholder="Enter admin password" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="modal-footer">
+
+
+
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Register here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        
+            <!-- Registration Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form name="submit-to-google-sheet">
+            <div class="mb-3">
+              <label for="registerName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="registerName" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+<script>
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = {
+            name: document.getElementById('registerName').value,
+            email: document.getElementById('registerEmail').value,
+            password: document.getElementById('registerPassword').value,
+        };
+
+        const response = await fetch('/register', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        const message = await response.text();
+        alert(message);
+    });
+</script>
